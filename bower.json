@@ -1,0 +1,21 @@
+{
+  "name": "Bloggle",
+  "version": "0.0.1",
+  "description": "The simple personal blog.",
+  "authors": [
+    "arshavindn"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/at-hatv/bloggle",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "angular-ui-tinymce": "^0.0.16"
+  }
+}

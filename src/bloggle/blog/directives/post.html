@@ -1,0 +1,14 @@
+<div class="dropdown">
+  <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
+    <span class="glyphicon glyphicon-triangle-bottom"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#/post/{{ post.id }}/edit"">Edit</a></li>
+    <li><a href="#/" ng-click="delete()">Delete</a></li>
+  </ul>
+</div>
+<h1 class="title"><a href="#/post/{{ post.id }}">{{ post.title }}</a></h1>
+<div class="date"><span class="glyphicon glyphicon-calendar"></span>{{ post.pub_date | date }}</div>
+<!-- <div class="content">{{ post.content }}</div> -->
+<div class="content" ng-bind-html="post.content"></div>
+<div class="likes"><span ng-click="like()" class="glyphicon glyphicon-thumbs-up"></span>{{ post.likes }}</div>

@@ -1,0 +1,125 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background-color: #EDEDED;
+}
+
+.jumbotron {
+  position: relative;
+  background-image: url('../img/blog-cover.jpg');
+  background-size: auto 100%;
+  background-position: center;
+  height: 280px;
+}
+
+.jumbotron,
+.jumbotrom img {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron .menu-btn {
+  font-size: 32px;
+  position: absolute;
+  right: 0.5%;
+  top: 98%;
+  transform: translateY(-100%);
+}
+
+.jumbotron .menu {
+  /* display: none; */
+  position: relative;
+  height: 75%;
+  width: 100%;
+  top: 100%;
+  transform: translateY(-100%);
+  background-color: #28383D;
+}
+
+/* .jumbotron .menu.ng-hide {
+  display: block;
+} */
+
+.jumbotron .menu div {
+  text-align: center;
+  padding: 10px;
+}
+
+.jumbotron .menu .glyphicon,
+.jumbotron .menu span {
+  color: white;
+  /* display: block; */
+  /* text-align: center; */
+  vertical-align: middle;
+}
+
+.glyphicon:before {
+  margin-right: 5px;
+}
+
+.glyphicon:hover {
+  cursor: default;
+}
+
+.primary-nav {
+  text-align: center;
+  position: relative;
+  background: rgba(240, 240, 240, 1);
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 1) 0%, rgba(224, 221, 224, 1) 47%, rgba(199, 197, 199, 1) 100%);
+}
+
+.primary-nav a {
+  display: inline-block;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.primary-nav a:hover {
+  background: linear-gradient(to bottom, #2989d8 10%,#1e5799 100%);
+  color: white;
+}
+
+.primary-nav .form-group {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 20px 0;
+  margin: 0;
+  background-color: #28383D;
+}
+
+footer small {
+  float: right;
+  color: white;
+  padding-top: 50px;
+}
+
+footer .inner-footer {
+  margin: 0 5%;
+  /*padding: 0;*/
+}
+
+footer nav {
+  float: left;
+}
+
+footer a {
+  display: block;
+  padding: 5px 0;
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html ng-app="Bloggle">
+<head>
+  <title>mozart's blog</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/new-post.css">
+</head>
+
+<body>
+  <div class="jumbotron" ng-controller="MenuCtrl">
+    <!-- <img src="assets/img/blog-cover.jpg" alt="blog-cover" width="100%"> -->
+    <div class="menu" ng-if="menu_on">
+      <div>
+      <i class="glyphicon glyphicon-plus"></i><span><a href="#/post/new">New post</a></span>
+      </div>
+      <div>
+        <i class="glyphicon glyphicon-off"></i><span>Log out</span>
+      </div>
+    </div>
+    <span class="menu-btn glyphicon glyphicon-menu-hamburger" aria-hidden="true" ng-class="menu_on ? 'glyphicon-remove' : 'glyphicon-menu-hamburger'" ng-click="menu_on = !menu_on"></span>
+  </div>
+  <nav class="primary-nav" role='navigation'>
+      <a href="#/">HOME</a>
+      <a href="#">ARCHIVED</a>
+      <a href="#/apps">APPS</a>
+      <a href="#/about">ABOUT ME</a>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="Search..." />
+        <i class="glyphicon glyphicon-search form-control-feedback"></i>
+      </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <section class="blog-posts col-md-8" ng-view></section>
+      <aside class="col-md-4" ng-controller="WeatherResourceCtrl">
+        <div>{{ weather_data }}</div>
+      </aside>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <nav class="inner-footer">
+          <a href="#/">Home</a>
+          <a href="#">Archived</a>
+          <a href="#/apps">Apps</a>
+          <a href="#/about">About Me</a>
+      </nav>
+      <small class="inner-footer">&copy; MOZART 2016</small>
+    </div>
+  </footer>
+</body>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="bower_components/tinymce-dist/tinymce.js"></script>
+<script type="text/javascript" src="bower_components/angular-ui-tinymce/src/tinymce.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.3.9/angular-strap.min.js"></script> -->
+<script src="bloggle/Bloggle.js"></script>
+<script src="bloggle/blog/Blog.js"></script>
+<script src="bloggle/blog/controllers/BlogController.js"></script>
+<script src="bloggle/blog/services/BlogService.js"></script>
+<script src="bloggle/blog/directives/post.js"></script>
+<script src="bloggle/app/App.js"></script>
+<script src="bloggle/app/controllers/AppController.js"></script>
+<script src="bloggle/weather/Weather.js"></script>
+<script src="bloggle/weather/services/WeatherService.js"></script>
+<script src="bloggle/weather/controllers/WeatherResourceCtrl.js"></script>
+</html>

@@ -1,0 +1,18 @@
+.about-me {
+    width: 70%;
+    margin: 150px auto 50px auto;
+    border: 1px solid #CDCDCD;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-me .avatar {
+    border-radius: 100%;
+    margin: -135px auto 10px auto;
+    vertical-align: top;
+}
+
+.about-me div {
+    margin: 0 auto;
+}

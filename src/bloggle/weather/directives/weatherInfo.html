@@ -1,0 +1,11 @@
+<div class="city">{{ info.city }}</div>
+<div class="today">
+  <h1>{{ info.today.condition.temperature }} &deg;{{ info.units.temperature }}</h1>
+  <img ng-src="assets/img/conky-google-now/{{ info.today.condition.code }}.png" alt="code">
+  <h1>{{ info.today.condition.text }}</h1>
+  <div><img ng-src="assets/img/conky-google-now/humidity.png" alt="humidity">{{ info.today.humidity }} %</div>
+  <div><img ng-src="assets/img/conky-google-now/wind.png" alt="wind">{{ info.today.wind }} {{ info.units.speed }}</div>
+</div>
+<div class="three-days">
+
+</div>
