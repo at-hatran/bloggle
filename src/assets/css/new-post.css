@@ -4,11 +4,6 @@
   padding: 10px 0;
 }
 
-.post-group input,
-.post-group textarea {
-  width: 100%;
-}
-
 .post-group textarea {
   height: 200px;
 }

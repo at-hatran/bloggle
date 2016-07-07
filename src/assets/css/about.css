@@ -1,10 +1,11 @@
 .about-me {
     width: 70%;
-    margin: 150px auto 50px auto;
+    margin: 120px auto 50px auto;
     border: 1px solid #CDCDCD;
     border-radius: 10px;
     padding: 40px;
     text-align: center;
+    background-color: white;
 }
 
 .about-me .avatar {
@@ -15,4 +16,8 @@
 
 .about-me div {
     margin: 0 auto;
+}
+
+.about-me h2 {
+  font-family: 'Raleway', sans-serif;
 }
