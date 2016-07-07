@@ -1,0 +1,39 @@
+.widget {
+  padding: 0 !important;
+}
+
+.widget .title {
+  background: linear-gradient(to bottom, #F9F9F9 0%,#E6E6E6 100%);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 6px 0;
+  font-weight: bold;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.widget .wrapper {
+  padding: 10px;
+}
+
+.weather {
+  background-color: rgba(199, 226, 200, 0.6);
+}
+
+.weather h1,
+.weather h2,
+.weather h3 {
+  margin: 0;
+  padding: 6px 0;
+}
+
+.weather .city {
+  /* padding: 6px 0; */
+}
+
+.weather .today h1 {
+  float: right;
+  font-size: 80px;
+  padding: 0;
+}

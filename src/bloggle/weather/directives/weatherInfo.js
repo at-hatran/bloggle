@@ -1,4 +1,4 @@
-angular.module('Bloggle.Weather').directive(['weatherInfo', function(WeatherService) {
+angular.module('Bloggle.Weather').directive('weatherInfo', [function(WeatherService) {
   return {
     restrict: "E",
     scope: {

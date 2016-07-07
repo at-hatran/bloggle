@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/about.css">
   <link rel="stylesheet" href="assets/css/new-post.css">
+  <link rel="stylesheet" href="assets/css/widgets.css">
 </head>
 
 <body>
@@ -39,8 +40,13 @@
   <div class="container">
     <div class="row">
       <section class="blog-posts col-md-8" ng-view></section>
-      <aside class="col-md-4" ng-controller="WeatherResourceCtrl">
-        <div>{{ weather_data }}</div>
+      <aside class="col-md-4">
+        <div class="widget weather box" ng-controller="WeatherResourceCtrl">
+          <p class="title">Weather</p>
+          <div class="wrapper">
+            <weather-info info="weather_data"></weather-info>
+          </div>
+        </div>
       </aside>
     </div>
   </div>
@@ -77,4 +83,5 @@
 <script src="bloggle/weather/Weather.js"></script>
 <script src="bloggle/weather/services/WeatherService.js"></script>
 <script src="bloggle/weather/controllers/WeatherResourceCtrl.js"></script>
+<script src="bloggle/weather/directives/weatherInfo.js"></script>
 </html>
