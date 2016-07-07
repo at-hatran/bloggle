@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="assets/css/widgets.css">
 </head>
 
-<body>
+<body ng-controller="MainCtrl">
   <div class="jumbotron" ng-controller="MenuCtrl">
     <!-- <img src="assets/img/blog-cover.jpg" alt="blog-cover" width="100%"> -->
     <div class="menu" ng-if="menu_on">
@@ -39,8 +39,8 @@
   </nav>
   <div class="container">
     <div class="row">
-      <section class="blog-posts col-md-8" ng-view></section>
-      <aside class="col-md-4">
+      <section class="blog-posts" ng-class="{'col-md-8': show_aside}" ng-view></section>
+      <aside ng-if="show_aside" class="col-md-4">
         <div class="widget weather box" ng-controller="WeatherResourceCtrl">
           <p class="title">Weather</p>
           <div class="wrapper">

@@ -4,8 +4,16 @@ appController.controller('MenuCtrl', ['$scope', function($scope) {
   $scope.menu_on = false;
 }]);
 
-appController.controller('TinyMCECtrl', ['$scope', function($scope) {
-
+appController.controller('MainCtrl', ['$scope', '$location',
+  function($scope, $location) {
+  $scope.$on('$locationChangeStart', function(event) {
+    path = $location.path();
+    console.log(path);
+    $scope.show_aside = true;
+    if (path.indexOf('new') != -1 || path.indexOf('edit') != -1 || path.indexOf('about') != -1) {
+      $scope.show_aside = false;
+    }
+  });
 }]);
 
 appController.animation('.menu', function() {
