@@ -1,0 +1,25 @@
+{
+  "name": "bloggle",
+  "version": "1.0",
+  "description": "An angularjs blog app.",
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "serve ./src -p 3000",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/at-hatv/bloggle.git"
+  },
+  "author": "mozart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/at-hatv/bloggle/issues"
+  },
+  "homepage": "https://github.com/at-hatv/bloggle",
+  "private": true,
+  "devDependencies": {
+    "bower": "*",
+    "serve": "*",
+  }
+}

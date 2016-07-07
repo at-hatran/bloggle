@@ -1,9 +1,9 @@
 {
-  "name": "Bloggle",
-  "version": "0.0.1",
-  "description": "The simple personal blog.",
+  "name": "bloggle",
+  "version": "1.0",
+  "description": "An angularjs blog app.",
   "authors": [
-    "arshavindn"
+    "mozart"
   ],
   "license": "MIT",
   "homepage": "https://github.com/at-hatv/bloggle",
