@@ -57,8 +57,10 @@ body {
 }
 
 .jumbotron .menu .glyphicon,
-.jumbotron .menu span {
+.jumbotron .menu span,
+.jumbotron .menu a {
   color: white;
+  text-transform: uppercase;
   /* display: block; */
   /* text-align: center; */
   vertical-align: middle;
